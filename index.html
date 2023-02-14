@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- <a href="https://www.sololearn.com/Profile/20617819/?ref=app">Valentine day</br>Copyright©-Tนktนk</a> -->
+
+    <main>
+
+        <div class="one">
+            <div class="base2"></div>
+            <div class="main_cr1"></div>
+            <div class="main_cr2"></div>
+            <div class="moon"></div>
+
+            <div class="cat_body1"></div>
+            <div class="cat_body2"></div>
+            <div class="cat_head1"></div>
+            <div class="cat_head2"></div>
+            <div class="cat_tail_l"></div>
+            <div class="cat_tail_r"></div>
+            <div class="cat_eye_l"></div>
+            <div class="cat_eye_r"></div>
+
+            <div class="s_t1"></div>
+            <div class="s_b2"></div>
+            <div class="ba1"></div>
+            <div class="ba2">
+                <div class="lol">gnghmg
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="image1.jpg">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="image2.jpg">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img src="image3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="circle_1"></div>
+            <div class="circle_2"></div>
+
+
+            <div id="star1"></div>
+            <div id="star2"></div>
+            <div id="star3"></div>
+            <div id="star4"></div>
+
+            <div id="heart">
+                <div id="h1">❤️</div>
+                <div id="h2">❤️</div>
+            </div>
+
+        </div>
+
+        <div class="lol">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image3.jpg">
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("fade");
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].classList.add("fade");
+                setTimeout(showSlides, 2000); // Измените здесь время для задержки между слайдами
+            }
+        </script>
+    </main>
+</body>
+
+</html>
